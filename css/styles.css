@@ -477,11 +477,11 @@ a {
 /* Testimonials */
 
 .testimonial {
-  padding: 3rem;
   overflow: visible;
 }
 
 .testimonial__image {
+  padding: 3rem 8rem;
   position: relative;
 }
 
@@ -491,8 +491,8 @@ a {
 
 .testimonial__image > .icon-container {
   position: absolute;
-  right: -32px;
-  top: 3rem;
+  right: 48px;
+  top: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -502,7 +502,16 @@ a {
   }
 
   .testimonial .quote {
-    margin-left: 6rem;
+    margin-left: 3rem;
+    padding-top: 5rem;
+  }
+
+  .testimonial__image {
+    padding: 3rem;
+  }
+
+  .testimonial__image > .icon-container {
+    right: 0;
   }
 }
 
