@@ -186,8 +186,8 @@ a {
   fill: #fff;
 }
 
-.icon--dark-gray {
-  fill: #393939;
+.icon--chevron {
+  padding: 13px;
 }
 
 .icon-container {
@@ -198,6 +198,12 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+.icon-container--small {
+  background: #393939;
+  height: 40px;
+  width: 40px;
 }
 
 .icon-container--accent {
