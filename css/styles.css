@@ -29,7 +29,7 @@ html {
 body {
   color: var(--color-body);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -528,18 +528,19 @@ a {
 }
 
 .testimonial__image {
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   position: relative;
 }
 
 .testimonial__image > img {
   width: 100%;
+  object-fit: cover;
 }
 
 .testimonial__image > .icon-container {
   position: absolute;
-  right: 8px;
-  top: 4rem;
+  right: -2px;
+  top: 3.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,7 +551,7 @@ a {
 
   .testimonial .quote {
     margin-left: 3rem;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
   }
 
   .testimonial__image {
@@ -559,22 +560,24 @@ a {
 
   .testimonial__image > .icon-container {
     right: 0;
+    top: 4.5rem;
   }
 }
 
 /* Callouts */
 
-.block__callout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.block-callout {
   background: linear-gradient(180deg, #fefefe 50%, #232323 50%);
 }
 
+.callout-container {
+  display: flex;
+  justify-content: center;
+}
+
 .callout {
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 5px;
-  max-width: fit-content;
   margin: auto 4rem;
 }
 
@@ -599,7 +602,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .block__callout {
+  .block-callout {
     background: linear-gradient(180deg, #fefefe 33.33%, #232323 33.33%);
   }
 
@@ -619,7 +622,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .callout {
-    margin: auto 8rem;
+    margin: auto 6rem;
   }
 
   .callout .grid--1x2 {
@@ -820,6 +823,7 @@ a {
 }
 
 /* Plans Block */
+
 .block-plans .grid {
   gap: 8rem 4rem;
 }
@@ -861,7 +865,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .block__showcase .grid {
+  .block-showcase .grid {
     grid-template-columns: repeat(2, 50%);
   }
 
