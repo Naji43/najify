@@ -824,6 +824,10 @@ a {
 
 /* Plans Block */
 
+.block-plans {
+  width: fit-content;
+}
+
 .block-plans .grid {
   gap: 8rem 4rem;
 }
