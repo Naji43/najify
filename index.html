@@ -31,7 +31,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <a aria-label="Moshify" class="nav__brand" href="/"
+          ><img src="images/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
@@ -76,6 +78,7 @@
       </header>
       <div class="input-group">
         <input
+          aria-label="Domain"
           type="text"
           class="input"
           placeholder="Enter domain name here..."
@@ -360,10 +363,14 @@
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
+              <picture>
+                <source type="image/webp" srcset="images/testimonial.webp 1x" />
+                <source type="image/jpg" srcset="images/testimonial.jpg 1x" />
+                <img
+                  src="images/testimonial.jpg"
+                  alt="A happy, smiling customer"
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use href="images/sprite.svg#quotes"></use>
