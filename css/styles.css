@@ -534,7 +534,7 @@ a {
   position: relative;
 }
 
-.testimonial__image > img {
+.testimonial__image > picture > img {
   width: 100%;
   object-fit: cover;
 }
